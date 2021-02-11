@@ -18,8 +18,12 @@ XData setup
     </Configuration>
     <!--ウェブアプリケーションパス /csp/try　の作成 -->
     <CSPApplication Url="/csp/${Namespace}" Directory="${cspdir}${Namespace}"  ServeFiles="1" Recurse="1" MatchRoles=":%DB_${Namespace}" AuthenticationMethods="32"
-       
     />
+
+    <!-- プロダクションの自動開始 -->
+    <Production Name="JSONTest.Prod" AutoStart="1" />
+
+    <!--HSパッケージも含めて利用できる環境に変更 -->
     <Invoke Class="%ZHSLIB.HealthShareMgr" Method="EnableHealthShareNamespace">
       <Arg Value="${Namespace}" />
     </Invoke>

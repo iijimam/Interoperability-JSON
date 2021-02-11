@@ -1,6 +1,6 @@
 ﻿ARG IMAGE=intersystems/irishealth:2020.1.0.215.0
 ARG IMAGE=store/intersystems/irishealth-community:2020.3.0.221.0
-ARG IMAGE=intersystems/irishealth:2020.3.0.221.0
+#ARG IMAGE=intersystems/irishealth:2020.3.0.221.0
 FROM $IMAGE
 USER root
 WORKDIR /opt/irisapp
