@@ -1,0 +1,4 @@
+{
+	"Name":"山田太郎",
+	"Email":"taro@mail.com"
+}

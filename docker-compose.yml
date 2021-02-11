@@ -1,0 +1,22 @@
+﻿version: '3.2'
+
+services:
+  iris:
+    build:
+      context: .
+      dockerfile: Dockerfile    
+    container_name: iris4htest
+
+    ports:
+    # 1972 is the superserver default port
+    # 2020.1はスーパーサーバポートは51773を使用しています 
+    - "51779:1972"
+    # 52773 is the webserver/management portal port
+    - "52779:52773"
+   
+    volumes:
+    # Mounts a local directory for passing in files and test scripts
+    - ./:/ISC
+                                
+    environment:
+     - TZ=JST-9
