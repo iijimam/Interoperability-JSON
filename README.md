@@ -47,11 +47,13 @@ IRIS for Health／HealthConnect で利用できる HS.SDA3.QuickStream クラス
 詳細は、[docker-compose.yml](/docker-compose.yml) をご参照ください。
 
 Git展開後、**./ は コンテナ内 /ISC ディレクトリをマウントしています。**
-また、IRISの管理ポータルの起動に使用するWebサーバポートは 62773 が割り当てられています。
-既に使用中ポートの場合は、[docker-compose.yml](/docker-compose.yml) の **15行目** を修正してご利用ください。
-バージョン2020.1を利用する場合、IRISのスーパーサーバーポートは 51773 番を使用するため、[docker-compose.yml](/docker-compose.yml) の **13行目** は以下に変更してご利用ください。
+また、IRISの管理ポータルの起動に使用するWebサーバポートは 52779 、スーパーサーバポートは 51779 が割り当てられています。
 
-**≪スーパーサーバーポート：51772 をホストの 62773 に割り当てる例≫　- "62773:51773"**
+既に使用中ポートの場合は、[docker-compose.yml](/docker-compose.yml) の **15行目** を修正してご利用ください。
+
+バージョン2020.1を利用する場合、IRISのスーパーサーバーポートは 51773 番を使用するため、[docker-compose.yml](/docker-compose.yml) の **13行目** は以下のように変更してご利用ください。
+
+**≪スーパーサーバーポート：51773 をホストの 62773 に割り当てる例≫　- "62773:51773"**
 
 ```
 git clone このGitのURL
