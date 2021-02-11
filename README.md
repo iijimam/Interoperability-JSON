@@ -37,7 +37,7 @@ IRIS for Health／HealthConnect で利用できる HS.SDA3.QuickStream クラス
 |コンテナ用|[Dockerfile](/Dockerfile)|コンテナビルド時に利用（IRISの初期設定を行うためiris.scriptやinstaller.clsを利用）|
 |IRIS初期設定用|[installer.cls](/installer.cls)|コンテナビルド時に実行するIRIS初期設定用インストーラークラス（APPネームスペース／データベースを定義）|
 |IRIS初期設定用|[iris.script](/iris.script)|コンテナビルド時に実行するIRIS初期設定用コマンドをまとめたファイル|
-|IRIS初期設定用|[iris.key](/iris.key)|コンテナビルド時にキー反映を行うため用意（実環境用キーに置き換えてご利用ください）|
+|IRIS初期設定用|iris.key|コンテナビルド時にキー反映を行うため用意（実環境用キーに置き換えてご利用ください）|
 |テスト用|[temp](/temp)|プロダクション内で使用するファイル入出力用ディレクトリとサンプルファイルを含むディレクトリ|
 |テスト用|[temp/in](/temp/in)|プロダクションのビジネスサービスに設定しているファイル入力用ディレクトリ|
 |テスト用|[temp/out](/temp/out)|プロダクションのビジネスオペレーションの出力ディレクトリに設定しているディレクトリ|
